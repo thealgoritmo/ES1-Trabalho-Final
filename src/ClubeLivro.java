@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+
 public class ClubeLivro {
+
+    ArrayList<AprovacaoProposta> propostaArrayList = new ArrayList<>();
 
     int idclube;
     String ResponsavelClube;
@@ -6,8 +10,8 @@ public class ClubeLivro {
 
     public ClubeLivro(int idclube, String responsavelClube, String genero) {
         this.idclube = idclube;
-        ResponsavelClube = responsavelClube;
-        Genero = genero;
+        this.ResponsavelClube = responsavelClube;
+        this.Genero = genero;
     }
 
     public int getIdclube() {
@@ -21,4 +25,9 @@ public class ClubeLivro {
     public String getGenero() {
         return Genero;
     }
+
+    public void adicionarPropostaAceite(AprovacaoProposta proposta){
+        propostaArrayList.add(proposta);
+    }
+
 }
