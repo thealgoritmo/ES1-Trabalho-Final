@@ -7,11 +7,13 @@ public class ClubeLivro {
     int idclube;
     String ResponsavelClube;
     String Genero;
+    String estado;
 
-    public ClubeLivro(int idclube, String responsavelClube, String genero) {
+    public ClubeLivro(int idclube, String responsavelClube, String genero, String estado) {
         this.idclube = idclube;
-        this.ResponsavelClube = responsavelClube;
-        this.Genero = genero;
+        ResponsavelClube = responsavelClube;
+        Genero = genero;
+        this.estado = estado;
     }
 
     public int getIdclube() {
@@ -24,6 +26,14 @@ public class ClubeLivro {
 
     public String getGenero() {
         return Genero;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public ArrayList<AprovacaoProposta> getPropostaArrayList() {
+        return propostaArrayList;
     }
 
     public void adicionarPropostaAceite(AprovacaoProposta proposta){
