@@ -39,5 +39,4 @@ public class ClubeLivro {
     public void adicionarPropostaAceite(AprovacaoProposta proposta){
         propostaArrayList.add(proposta);
     }
-
 }
