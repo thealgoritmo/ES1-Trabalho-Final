@@ -49,6 +49,20 @@ public class RepositorioMem implements Repositorio{
         ListaCoimas.add(coima);
     }
 
+    public void adicionaAprovacaoProposta(AprovacaoProposta aprovacaoProposta){ListaAprovacaoProposta.add(aprovacaoProposta);}
+
+    public void adicionaAprovacaoPropostaLivro(AprovacaoPropostaLivro aprovacaoPropostaLivro){ListaAprovacaoPropostaLivro.add(aprovacaoPropostaLivro);}
+
+    public void adicionaClubeLivro(ClubeLivro clubeLivro){ListaClubeLivro.add(clubeLivro);}
+
+    public void adicionaMembro(Membro membro){ListaMembro.add(membro);}
+
+    public void adicionaPropostaLivro(PropostaLivro propostaLivro){ListaPropostaLivro.add(propostaLivro);}
+
+    public void adicionaSala(Sala sala){ListaSala.add(sala);}
+
+    public void adicionaSessao(Sessao sessao){ListaSessao.add(sessao);}
+
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r){
         for(Emprestimo e: ListaEmprestimos){
             if (e.getRequisicao().equals(r)) {

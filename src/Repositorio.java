@@ -17,6 +17,13 @@ public interface Repositorio{
     ArrayList<RequisicaoCompra> ListaRequesicoesCompra = new ArrayList<RequisicaoCompra>();
     ArrayList<Encomenda> ListaEncomendas = new ArrayList<Encomenda>();
     ArrayList<EntradaNovoLivro> ListaEntradasNovosLivros = new ArrayList<EntradaNovoLivro>();
+    ArrayList<AprovacaoProposta> ListaAprovacaoProposta = new ArrayList<AprovacaoProposta>();
+    ArrayList<AprovacaoPropostaLivro> ListaAprovacaoPropostaLivro = new ArrayList<AprovacaoPropostaLivro>();
+    ArrayList<ClubeLivro> ListaClubeLivro = new ArrayList<ClubeLivro>();
+    ArrayList<Membro> ListaMembro = new ArrayList<Membro>();
+    ArrayList<PropostaLivro> ListaPropostaLivro = new ArrayList<PropostaLivro>();
+    ArrayList<Sala> ListaSala = new ArrayList<Sala>();
+    ArrayList<Sessao> ListaSessao = new ArrayList<Sessao>();
 
      void adicionaPropostaRequisicao(PropostaAquisicao proposta);
 
@@ -44,5 +51,19 @@ public interface Repositorio{
 
      void adicionaCoima(Coima coima);
 
-     Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
+     void adicionaAprovacaoProposta(AprovacaoProposta aprovacaoProposta);
+
+     void adicionaAprovacaoPropostaLivro(AprovacaoPropostaLivro aprovacaoPropostaLivro);
+
+     void adicionaClubeLivro(ClubeLivro clubeLivro);
+
+     void adicionaMembro(Membro membro);
+
+     void adicionaPropostaLivro(PropostaLivro propostaLivro);
+
+     void adicionaSala(Sala sala);
+
+     void adicionaSessao(Sessao sessao);
+
+    Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 }
